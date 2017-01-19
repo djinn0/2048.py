@@ -4,7 +4,7 @@ from __future__ import print_function
 from random import randint
 import sys
 
-def getnums(f,r=[0,1,2,3],c=[0,1,2,3]):
+def getnums(f,r=[1,2,3,0],c=[0,1,2,3]):
     ints=[]
     for y in r:
         for x in c:ints.append(f[y][x])
@@ -93,4 +93,5 @@ while not (f==tilt_field(f,"w")==tilt_field(f,"a")
         print("you win")
         sys.exit(1)
 pprint(f)
+print("I am awesome")
 print("you lose")
